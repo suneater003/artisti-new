@@ -1,0 +1,25 @@
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    position: relative;
+  }
+  
+  .footer-icons {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .footer-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+  }
+  
+  .footer-icon:hover {
+    transform: scale(1.1);
+  }
+  

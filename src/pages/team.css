@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'bodwars';
+  src: url('../assets/fonts/Bodwarsdemo-z8orl.otf') format('opentype');
+  font-weight: normal;
+}
+
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.word {
+  font-family: 'bodwars';
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin: 2rem 0;
+  color: white;
+}
+
+.team-title {
+  font-family: 'bodwars', cursive;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+/* Base row styling */
+.team-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Specific row configurations */
+.team-row-center {
+  justify-content: center;
+}
+
+.team-row-three {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  justify-items: center;
+  gap: 2rem;
+}
+
+.team-row-four {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  justify-items: center;
+  gap: 1.5rem;
+}
+
+/* Team card styling */
+.team-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  min-height: 380px;
+}
+
+/* Image styling */
+.team-photo {
+  width: 100%;
+  max-width: 210px;
+  height: 210px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Text styling */
+.team-name {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  color: #000;
+  margin: 0;
+}
+
+.team-role {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: #666;
+  margin: 0 0 1rem 0;
+}
+
+/* Social icons */
+.team-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-icon-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Club image */
+.club-image-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.club-img {
+  border-radius: 5%;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .team-row-three,
+  .team-row-four {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .team-row-three {
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+  }
+  
+  .team-row-four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .team-card {
+    max-width: 220px;
+    min-height: 360px;
+  }
+  
+  .team-photo {
+    max-width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-container {
+    padding: 1.5rem;
+  }
+  
+  .team-row-three,
+  .team-row-four {
+    gap: 1rem;
+  }
+  
+  .team-card {
+    max-width: 200px;
+    min-height: 340px;
+  }
+  
+  .team-photo {
+    max-width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 640px) {
+  .team-row-three {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto 3rem;
+  }
+  
+  .team-row-four {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto 3rem;
+  }
+  
+  .team-card {
+    max-width: 180px;
+    min-height: 320px;
+  }
+  
+  .team-photo {
+    max-width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-container {
+    padding: 1rem;
+  }
+  
+  .team-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .team-card {
+    max-width: 160px;
+    min-height: 300px;
+  }
+  
+  .team-photo {
+    max-width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 380px) {
+  .team-card {
+    max-width: 140px;
+    min-height: 280px;
+  }
+  
+  .team-photo {
+    max-width: 100px;
+    height: 100px;
+  }
+}

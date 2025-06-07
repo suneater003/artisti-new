@@ -1,0 +1,207 @@
+/* Existing font-face and base styles remain the same */
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fade.visible {
+    opacity: 1;
+  }
+  
+  .fade.hidden {
+    opacity: 0;
+  }
+  
+  .hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .hero-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    filter: brightness(1.1) contrast(1.2);
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+  }
+  
+  .text-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  /* General hero text style */
+  .hero-text {
+    position: absolute;
+    font-family: 'Kaher', sans-serif;
+    font-size: 15vh;
+    font-weight: bold;
+    pointer-events: none;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    mix-blend-mode: normal;
+  }
+  
+  /* White base layer */
+  .text-white {
+    color: white;
+    z-index: 2;
+  }
+  
+  /* Black overlay */
+  .text-black {
+    color: black;
+    z-index: 3;
+    clip-path: none;
+  }
+  
+  /* THE gets red tint */
+  .text-the {
+    top: 32%;
+    left: 58%;
+    color: #d52d2d;
+    z-index: 2;
+  }
+  
+  /* Shared positioning classes for all words */
+  .text-state {
+    top: 10%;
+    left: 12%;
+  }
+  
+  .text-of {
+    top: 58%;
+    left: 24%;
+  }
+  
+  .text-art {
+    bottom: 8%;
+    left: 60%;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .hero-text {
+      font-size: 12vh;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .hero-image {
+      width: 45%;
+    }
+    
+    .hero-text {
+      font-size: 10vh;
+    }
+    
+    .text-the {
+      left: 55%;
+    }
+    
+    .text-art {
+      left: 55%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-image {
+      width: 60%;
+      height: 70vh;
+    }
+    
+    .hero-text {
+      font-size: 8vh;
+    }
+    
+    .text-state {
+      top: 12%;
+      left: 10%;
+    }
+    
+    .text-the {
+      top: 30%;
+      left: 50%;
+    }
+    
+    .text-of {
+      top: 55%;
+      left: 20%;
+    }
+    
+    .text-art {
+      bottom: 10%;
+      left: 50%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero-image {
+      width: 65%;
+      height: 45vh;
+    }
+    
+    .hero-text {
+      font-size: 6vh;
+    }
+    
+    .text-state {
+      top: 27%;
+      left: 4%;
+    }
+    
+    .text-the {
+      top: 40%;
+      left: 70%;
+    }
+    
+    .text-of {
+      top: 50%;
+      left: 8%;
+    }
+    
+    .text-art {
+      bottom: 30%;
+      left: 70%;
+    }
+    
+  }
+  
+  /* About section remains the same */
+  .about-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kaher', sans-serif;
+    font-size: 10rem;
+    color: white;
+    letter-spacing: 0.1em;
+    user-select: none;
+  }
+  
+  @media (max-width: 768px) {
+    .about-section {
+      font-size: 6rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-section {
+      font-size: 3rem;
+    }
+  }

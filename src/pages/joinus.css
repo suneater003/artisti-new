@@ -1,0 +1,212 @@
+/* joinus.css */
+.joinus-section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  /* Stickers - Desktop */
+  .sticker {
+    position: absolute;
+    width: 50vh;
+    max-width: 180px;
+    z-index: 2;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .top-left {
+    top: 2rem;
+    left: 2rem;
+    transform: rotate(-15deg) translateY(20px);
+  }
+  
+  .top-right {
+    top: 2rem;
+    right: 2rem;
+    transform: rotate(15deg) translateY(20px);
+  }
+  
+  .bottom-right {
+    bottom: 2rem;
+    right: 2rem;
+    transform: rotate(10deg) translateY(20px);
+  }
+  
+  .bottom-left {
+    bottom: 2rem;
+    left: 2rem;
+    width:12vh;
+    transform: rotate(-10deg) translateY(20px);
+  }
+  
+  /* Stickers - Mobile */
+  .sticker-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .mobile-sticker {
+    position: static;
+    width: 80px;
+    height: 80px;
+    transform: none !important;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+  
+  /* Center image */
+  .center-image {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    z-index: 1;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  /* Join details */
+  .joinus-details {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    width: 100%;
+    max-width: 300px;
+    color: white;
+    font-family: 'bodwars', sans-serif;
+    z-index: 3;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  /* Mobile join details */
+  .mobile-joinus {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: 2rem;
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .joinus-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  .joinus-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .info-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  .joinus-info h3 {
+    margin: 0 0 0.3rem;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: #90caf9;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .joinus-info p,
+  .joinus-info a {
+    font-size: clamp(0.8rem, 1.8vw, 0.9rem);
+    color: #e0e0e0;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+  }
+  
+  .joinus-info a {
+    text-decoration: none;
+    color: #bbdefb;
+  }
+  
+  .joinus-info a:hover {
+    color: #64b5f6;
+    text-decoration: underline;
+  }
+  
+  /* Animation when visible */
+  .joinus-section.visible .sticker,
+  .joinus-section.visible .center-image,
+  .joinus-section.visible .joinus-details,
+  .joinus-section.visible .mobile-sticker {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .joinus-section.visible .top-left {
+    transform: rotate(-15deg);
+  }
+  
+  .joinus-section.visible .top-right {
+    transform: rotate(15deg);
+  }
+  
+  .joinus-section.visible .bottom-right {
+    transform: rotate(10deg);
+  }
+  
+  .joinus-section.visible .bottom-left {
+    transform: rotate(-10deg);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .joinus-section {
+      padding: 1.5rem;
+      justify-content: flex-start;
+      padding-top: 3rem;
+    }
+    
+    .center-image {
+      margin-top: 1rem;
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mobile-sticker {
+            display: none; /* This will hide the stickers */
+    }
+    
+    .joinus-details {
+      padding: 1rem;
+    }
+    .center-image {
+        margin-top: -4rem;
+        max-width: 90%;
+      }
+    .joinus-title {
+      font-size: 1.5rem;
+    }
+  }

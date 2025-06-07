@@ -1,0 +1,150 @@
+/* src/pages/gallery.css */
+@font-face {
+    font-family: 'bodwars';
+    src: url('../assets/fonts/Bodwarsdemo-z8orl.otf') format('opentype');
+    font-weight: normal;
+  }
+  
+  .gallery-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+    overflow: visible;
+  }
+  
+  .gallery-title {
+    text-align: center;
+    margin: 2rem 0 3rem;
+    font-family: 'bodwars', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-top: 5rem;
+    color: #ffffff;
+  }
+  
+  /* Masonry Grid */
+  .my-masonry-grid {
+    display: flex;
+    margin-left: -15px;
+    width: auto;
+  }
+  
+  .my-masonry-grid_column {
+    padding-left: 15px;
+    background-clip: padding-box;
+  }
+  
+  /* Masonry Items */
+  .masonry-item {
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .masonry-item:hover {
+    transform: scale(1.02) translateY(0);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+  
+  .masonry-item.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .masonry-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Image Title */
+  .photo-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .masonry-item:hover .photo-title {
+    opacity: 1;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1200px) {
+    .my-masonry-grid {
+      margin-left: -12px;
+    }
+    .my-masonry-grid_column {
+      padding-left: 12px;
+    }
+    .masonry-item {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .gallery-container {
+      padding: 0.5rem;
+    }
+    .my-masonry-grid {
+      margin-left: -8px;
+    }
+    .my-masonry-grid_column {
+      padding-left: 8px;
+    }
+    .masonry-item {
+      margin-bottom: 12px;
+      border-radius: 8px;
+    }
+    .photo-title {
+      opacity: 1;
+      padding: 8px;
+      background: rgba(0,0,0,0.7);
+    }
+  }
+  
+  /* Update your gallery.css with these changes */
+@media (max-width: 500px) {
+    .my-masonry-grid {
+      display: block !important; /* Override masonry's flex layout */
+      margin-left: 0 !important;
+      width: 100% !important;
+    }
+    
+    .my-masonry-grid_column {
+      width: 100% !important;
+      padding-left: 0 !important;
+      column-count: 1 !important;
+    }
+    
+    .masonry-item {
+      width: 100% !important;
+      margin: 0 0 15px 0 !important;
+      break-inside: avoid; /* Prevent items from splitting across columns */
+      page-break-inside: avoid; /* For older browsers */
+    }
+    
+    .masonry-image {
+      min-height: auto;
+      max-height: 400px; /* Adjust as needed */
+      object-fit: contain;
+    }
+  }
