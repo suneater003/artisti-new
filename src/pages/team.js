@@ -40,8 +40,8 @@ const secondRowMembers = [
     img: gunidhhiImage,
     socials: {
       linkedin: 'https://linkedin.com/in/gunnidhi',
-      email: 'mailto:gunnidhi@example.com',
-      instagram: 'https://instagram.com/gunnidhi',
+      email: 'mailto:gunnidhisinghi.official@gmail.com ',
+      instagram: 'https://instagram.com/gunnidhi_03',
     },
   },
   {
