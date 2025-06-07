@@ -27,21 +27,21 @@
   .top-left {
     top: 2rem;
     left: 2rem;
-      width:12vh;
+    
     transform: rotate(-15deg) translateY(20px);
   }
   
   .top-right {
     top: 2rem;
     right: 2rem;
-      width:12vh;
+     
     transform: rotate(15deg) translateY(20px);
   }
   
   .bottom-right {
     bottom: 2rem;
     right: 2rem;
-      width:12vh;
+      
     transform: rotate(10deg) translateY(20px);
   }
   
