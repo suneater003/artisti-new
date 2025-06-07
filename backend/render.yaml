@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: artisti-backend
+    env: node
+    plan: free
+    region: oregon  # or change to your region
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js  # or: npm start (if you have a start script)
+    envVars:
+      - key: MONGODB_URI
+        value: YOUR_MONGODB_CONNECTION_STRING
