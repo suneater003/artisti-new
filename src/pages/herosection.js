@@ -100,7 +100,7 @@ const HeroSection = () => {
         ></div>
   
         <div className="text-container">
-          {/* STATE */}
+ 
           <div className={`hero-text text-state text-white ${getFadeClass(visibleElements.STATE)}`}>
             STATE
           </div>
@@ -108,15 +108,14 @@ const HeroSection = () => {
             STATE
           </div>
   
-          {/* THE */}
+
           <div className={`hero-text text-the text-white ${getFadeClass(visibleElements.THE)}`}>
             THE
           </div>
           <div className={`hero-text text-the text-black red-tint ${getFadeClass(visibleElements.THE)}`} ref={blackRefs.THE}>
             THE
           </div>
-  
-          {/* OF */}
+
           <div className={`hero-text text-of text-white ${getFadeClass(visibleElements.OF)}`}>
             OF
           </div>
@@ -124,7 +123,7 @@ const HeroSection = () => {
             OF
           </div>
   
-          {/* ART */}
+
           <div className={`hero-text text-art text-white ${getFadeClass(visibleElements.ART)}`}>
             ART
           </div>

@@ -165,32 +165,32 @@ function TeamCard({ member }) {
   );
 }
 
-// In your Team component, update the rows like this:
+
 export default function Team() {
   return (
     <div className="team-container">
       <h1 className="team-title">Meet Our Team</h1>
 
-      {/* Row 1: Chief Advisor - centered single card */}
+      {/* Chief Advisor - centered single card */}
       <div className="team-row team-row-center">
         <TeamCard member={aditya} />
       </div>
 
-      {/* Row 2: 3 Coordinators - centered */}
+      {/* Coordinators - centered */}
       <div className="team-row team-row-three">
         {secondRowMembers.map((member, idx) => (
           <TeamCard key={idx} member={member} />
         ))}
       </div>
 
-      {/* Row 3: 4 Members - properly centered */}
+      {/*  Members - properly centered */}
       <div className="team-row team-row-four">
         {thirdRowMembers.map((member, idx) => (
           <TeamCard key={idx} member={member} />
         ))}
       </div>
 
-      {/* Row 4: 3 Executive Members - centered with empty space */}
+      {/* Executive Members - centered with empty space */}
       <div className="team-row team-row-three">
         {otherMembers1.map((member, idx) => (
           <TeamCard key={idx} member={member} />

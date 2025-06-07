@@ -42,7 +42,6 @@ const JoinUs = () => {
       className={`joinus-section ${isVisible ? 'visible' : ''}`}
       ref={sectionRef}
     >
-      {/* Stickers - different layout for mobile */}
       {isMobile ? (
         <div className="sticker-container">
           <img src={sticker1} alt="Art sticker" className="sticker mobile-sticker" />
@@ -57,10 +56,9 @@ const JoinUs = () => {
         </>
       )}
 
-      {/* Boy painting image */}
       <img src={boyPainting} alt="Boy Painting" className="center-image" />
 
-      {/* Join details - always visible on mobile */}
+
       <div className={`joinus-details ${isMobile ? 'mobile-joinus' : ''}`}>
         <h2 className="joinus-title">JOIN US</h2>
         <div className="joinus-info">

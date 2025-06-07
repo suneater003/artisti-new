@@ -1,4 +1,4 @@
-/* Base styles for all devices */
+
 .contact-container {
     max-width: 100%;
     margin: 1rem;
@@ -13,7 +13,7 @@
     text-align: center;
     color: #ffffff;
     margin-bottom: 1.25rem;
-    font-size: 1.5rem; /* Larger font for mobile */
+    font-size: 1.5rem; 
   }
   
   .form-group {
@@ -24,22 +24,22 @@
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
-    color: #e0e0e0; /* Lighter color for better contrast */
+    color: #e0e0e0;
   }
   
   .form-group input,
   .form-group textarea {
     width: 90%;
     padding: 0.75rem;
-    border: 1px solid #686868; /* Darker border for dark theme */
-    border-radius: 6px; /* Slightly larger radius */
+    border: 1px solid #686868; 
+    border-radius: 6px; 
     font-size: 1rem;
-    background: #2a2a2a; /* Darker input background */
-    color: #ffffff; /* White text */
+    background: #2a2a2a; 
+    color: #ffffff; 
   }
   
   .form-group textarea {
-    min-height: 120px; /* Slightly smaller on mobile */
+    min-height: 120px; 
   }
   
   button[type="submit"] {
@@ -59,7 +59,7 @@
   }
   
   button[type="submit"]:disabled {
-    background: #555555; /* Darker disabled state */
+    background: #555555; 
   }
   
   .success-message {
@@ -80,7 +80,6 @@
     text-align: center;
   }
   
-  /* Mobile-specific adjustments */
   @media (max-width: 480px) {
     .contact-container {
       margin: 0.5rem;
@@ -113,7 +112,7 @@
     }
   }
   
-  /* Dark mode enhancements */
+
   @media (prefers-color-scheme: dark) {
     .contact-container {
       background: #1a1a1a;

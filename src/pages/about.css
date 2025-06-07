@@ -66,7 +66,7 @@
     -webkit-text-fill-color: transparent;
   }
   
-  /* Responsive adjustments */
+
   @media (max-width: 768px) {
     .about-section {
       padding: 3rem 1.5rem;

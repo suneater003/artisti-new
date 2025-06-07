@@ -12,7 +12,7 @@ const AboutSection = () => {
       },
       {
         threshold: 0.2,
-        rootMargin: '0px 0px -100px 0px' // Triggers slightly before element comes into view
+        rootMargin: '0px 0px -100px 0px' 
       }
     );
 

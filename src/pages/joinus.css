@@ -1,4 +1,4 @@
-/* joinus.css */
+
 .joinus-section {
     position: relative;
     min-height: 100vh;
@@ -12,7 +12,7 @@
     box-sizing: border-box;
   }
   
-  /* Stickers - Desktop */
+ 
   .sticker {
     position: absolute;
     width: 50vh;
@@ -49,7 +49,7 @@
     transform: rotate(-10deg) translateY(20px);
   }
   
-  /* Stickers - Mobile */
+
   .sticker-container {
     display: flex;
     flex-wrap: wrap;
@@ -69,7 +69,7 @@
     transition: opacity 0.8s ease;
   }
   
-  /* Center image */
+
   .center-image {
     position: relative;
     width: 100%;
@@ -82,7 +82,7 @@
     transition: opacity 0.8s ease, transform 0.8s ease;
   }
   
-  /* Join details */
+
   .joinus-details {
     position: absolute;
     bottom: 2rem;
@@ -100,8 +100,7 @@
     transform: translateY(20px);
     transition: opacity 0.8s ease, transform 0.8s ease;
   }
-  
-  /* Mobile join details */
+
   .mobile-joinus {
     position: relative;
     bottom: auto;
@@ -155,7 +154,7 @@
     text-decoration: underline;
   }
   
-  /* Animation when visible */
+  
   .joinus-section.visible .sticker,
   .joinus-section.visible .center-image,
   .joinus-section.visible .joinus-details,
@@ -180,7 +179,7 @@
     transform: rotate(-10deg);
   }
   
-  /* Responsive adjustments */
+
   @media (max-width: 768px) {
     .joinus-section {
       padding: 1.5rem;
@@ -196,7 +195,7 @@
   
   @media (max-width: 480px) {
     .mobile-sticker {
-            display: none; /* This will hide the stickers */
+            display: none; 
     }
     
     .joinus-details {

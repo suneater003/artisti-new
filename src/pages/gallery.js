@@ -99,7 +99,7 @@ export default function MasonryGallery() {
     };
   }, []);
 
-  // Optional: Force layout recalculation on resize
+  //  Force layout recalculation on resize
   useEffect(() => {
     const handleResize = () => {
       window.dispatchEvent(new Event("resize"));

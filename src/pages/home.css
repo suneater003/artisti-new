@@ -1,4 +1,4 @@
-/* Existing font-face and base styles remain the same */
+
 .fade {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -43,7 +43,7 @@
     z-index: 2;
   }
   
-  /* General hero text style */
+ 
   .hero-text {
     position: absolute;
     font-family: 'Kaher', sans-serif;
@@ -54,20 +54,20 @@
     mix-blend-mode: normal;
   }
   
-  /* White base layer */
+  
   .text-white {
     color: white;
     z-index: 2;
   }
   
-  /* Black overlay */
+  
   .text-black {
     color: black;
     z-index: 3;
     clip-path: none;
   }
   
-  /* THE gets red tint */
+  
   .text-the {
     top: 32%;
     left: 58%;
@@ -75,7 +75,7 @@
     z-index: 2;
   }
   
-  /* Shared positioning classes for all words */
+  
   .text-state {
     top: 10%;
     left: 12%;
@@ -91,7 +91,7 @@
     left: 60%;
   }
   
-  /* Responsive adjustments */
+
   @media (max-width: 1200px) {
     .hero-text {
       font-size: 12vh;
@@ -179,7 +179,7 @@
     
   }
   
-  /* About section remains the same */
+  
   .about-section {
     width: 100%;
     height: 100vh;

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import api from '../utils/axios'; // Make sure this path is correct
-import './contact.css'; // Assuming you have a CSS file
+import api from '../utils/axios'; 
+import './contact.css'; 
 
 const Contact = () => {
-  // State management
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
