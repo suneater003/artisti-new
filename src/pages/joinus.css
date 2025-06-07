@@ -15,7 +15,7 @@
  
   .sticker {
     position: absolute;
-    width: 50vh;
+    width: 70vh;
     max-width: 180px;
     z-index: 2;
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
@@ -27,18 +27,21 @@
   .top-left {
     top: 2rem;
     left: 2rem;
+    
     transform: rotate(-15deg) translateY(20px);
   }
   
   .top-right {
     top: 2rem;
     right: 2rem;
+     
     transform: rotate(15deg) translateY(20px);
   }
   
   .bottom-right {
     bottom: 2rem;
     right: 2rem;
+      
     transform: rotate(10deg) translateY(20px);
   }
   
