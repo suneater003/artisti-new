@@ -71,7 +71,10 @@
   gap: 0.5rem;
   min-height: 380px;
 }
-
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgb(255, 0, 43);
+}
 /* Image styling */
 .team-photo {
   width: 100%;
@@ -82,7 +85,10 @@
   border-radius: 50%;
   margin-bottom: 1rem;
 }
-
+.team-photo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgb(255, 0, 43);
+}
 /* Text styling */
 .team-name {
   font-size: clamp(1rem, 3vw, 1.25rem);
@@ -123,6 +129,10 @@
   width: 100%;
   max-width: 900px;
   height: auto;
+}
+.club-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgb(255, 0, 43);
 }
 
 /* Responsive adjustments */

@@ -7,17 +7,24 @@
   }
   
   .footer-icons {
-    margin-top: 0.5rem;
     display: flex;
-    justify-content: center;
     gap: 1rem;
+    margin-top: 0.5rem;
+    justify-content: center;
   }
   
   .footer-icon {
     width: 24px;
     height: 24px;
-    transition: transform 0.2s ease;
+    color: white; /* Change as per your theme */
+    transition: transform 0.3s, color 0.3s;
   }
+  
+  .footer-icon:hover {
+    transform: scale(1.2);
+    color: #fc0000; /* Pinkish hover effect */
+  }
+  
   
   .footer-icon:hover {
     transform: scale(1.1);

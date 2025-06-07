@@ -52,7 +52,8 @@
     font-size: clamp(1rem, 1.5vw, 1.4rem);
     line-height: 1.6;
     font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(90deg, #8ec5fc, #e0ff75);
+    background:rgb(255, 255, 255);
+    font-weight: bolder;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 0 1rem;
@@ -61,10 +62,11 @@
   
   .highlight {
     font-weight: bold;
-    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    background: linear-gradient(90deg, #ff0080, #9f5be3, #2afadf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  
   
 
   @media (max-width: 768px) {
