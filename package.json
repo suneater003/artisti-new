@@ -28,7 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "react-scripts": "^5.0.1",
+  
   "eslintConfig": {
     "extends": [
       "react-app",
