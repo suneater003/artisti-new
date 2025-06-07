@@ -45,7 +45,7 @@ const secondRowMembers = [
     },
   },
   {
-    name: 'Jagdeep Kaur',
+    name: 'Jagdeep Kaur', 
     role: 'Executive General',
     img: jagdeepImage,
     socials: {
