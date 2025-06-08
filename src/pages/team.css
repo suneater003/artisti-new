@@ -36,7 +36,6 @@
   width: 100%;
 }
 
-/* Specific row configurations */
 .team-row-center {
   justify-content: center;
 }
@@ -55,7 +54,7 @@
   gap: 1.5rem;
 }
 
-/* Team card styling */
+
 .team-card {
   background: #fff;
   border-radius: 10px;
@@ -70,7 +69,10 @@
   gap: 0.5rem;
   min-height: 380px;
 }
-
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgb(255, 0, 43);
+}
 .team-photo {
   width: 100%;
   max-width: 210px;
@@ -80,6 +82,7 @@
   border-radius: 50%;
   margin-bottom: 1rem;
 }
+
 .team-card:hover .team-photo {
   transform: translateY(-5px);
   box-shadow: 0 0 20px rgb(255, 0, 43);
