@@ -82,7 +82,7 @@ const thirdRowMembers  = [
     role: 'PR & Media',
     img: aaryaImage,
     socials: {
-      linkedin: 'https://linkedin.com/in/aarya',
+      linkedin: 'https://linkedin.com',
       email: 'mailto: aarya06032006@gmail.com',
       instagram: 'https://instagram.com/Aarya_tiwari2006',
     },
