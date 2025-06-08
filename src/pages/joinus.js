@@ -71,7 +71,7 @@ const JoinUs = () => {
           </div>
           <div className="info-item">
             <h3>WHATSAPP</h3>
-            <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://chat.whatsapp.com/JXP8GOeQpS6ENdvRRmNjzm" target="_blank" rel="noopener noreferrer">
               Join WhatsApp Group
             </a>
           </div>
