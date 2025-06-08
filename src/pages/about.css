@@ -76,6 +76,7 @@
     
     .description {
       line-height: 1.5;
+      background:rgb(255, 255, 255);
     }
   }
   
@@ -90,5 +91,8 @@
     
     .subtitle {
       margin-bottom: 1.5rem;
+    }
+    .description {
+      background:rgb(255, 255, 255);
     }
   }

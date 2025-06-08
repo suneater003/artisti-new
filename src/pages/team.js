@@ -29,9 +29,9 @@ const secondRowMembers = [
     role: 'Club Coordinator',
     img: shashankImage,
     socials: {
-      linkedin: 'https://linkedin.com/in/shashank',
+      linkedin: 'https://www.linkedin.com/in/shashank-kumar-saha-4452a331b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ',
       email: 'mailto:sk927saha@gmail.com',
-      instagram: 'https://instagram.com/shashank',
+      instagram: 'https://instagram.com/zen_cruxz277',
     },
   },
   {
@@ -62,7 +62,7 @@ const thirdRowMembers  = [
     role: 'Event Manager',
     img: abhinavImage,
     socials: {
-      linkedin: 'https://linkedin.com/in/abhinav',
+      linkedin: 'https://www.linkedin.com/in/lochan-agarwal-00b372327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ',
       email: 'mailto: abhinavsingh0233@gmail.com',
       instagram: 'https://instagram.com/theguyonsky_',
     },
