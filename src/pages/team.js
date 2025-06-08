@@ -50,8 +50,8 @@ const secondRowMembers = [
     img: jagdeepImage,
     socials: {
       linkedin: 'https://linkedin.com/in/jagdeep',
-      email: 'mailto:jagdeep@example.com',
-      instagram: 'https://instagram.com/jagdeep',
+      email: 'mailto:Vicioussecrecy@gmail.com',
+      instagram: 'https://instagram.com/tequila_jaggu',
     },
   },
 ];
