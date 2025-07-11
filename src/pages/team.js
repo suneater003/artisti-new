@@ -20,8 +20,8 @@ const firstrow = [
     role: 'Teacher Coordinator',
     img: birajsirImage,
     socials: {
-      linkedin: 'https://www.linkedin.com/in/biraj-sir-link', 
-      email: 'mailto:birajsir@example.com',
+      linkedin: 'https://www.linkedin.com/in/biraj-upadhyaya-936784114/', 
+      email: 'mailto:biraj01@gmail.com',
       
     },
   },
