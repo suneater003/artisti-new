@@ -12,16 +12,30 @@ import ashiniImage from '../assets/team/ashini.jpg';
 import aaryaImage from '../assets/team/aarya.jpg';
 import lochanImage from '../assets/team/lochan.jpg';
 import roushanImage from '../assets/team/roushan.jpg';
-const aditya = {
-  name: 'Aditya Raj',
-  role: 'Chief Advisor',
-  img: adityaImage,
-  socials: {
-    linkedin: 'https://www.linkedin.com/in/aditya-raj-2686772b8/',
-    email: 'mailto:aditya1raj003@gmail.com',
-    instagram: 'https://www.instagram.com/aditya_raj645/',
+import birajsirImage from '../assets/team/birajsir.jpg'; 
+
+const firstrow = [
+  {
+    name: 'Mr.Biraj Upadhyaya',
+    role: 'Teacher Coordinator',
+    img: birajsirImage,
+    socials: {
+      linkedin: 'https://www.linkedin.com/in/biraj-sir-link', 
+      email: 'mailto:birajsir@example.com',
+      
+    },
   },
-};
+  {
+    name: 'Aditya Raj',
+    role: 'Chief Advisor',
+    img: adityaImage,
+    socials: {
+      linkedin: 'https://www.linkedin.com/in/aditya-raj-2686772b8/',
+      email: 'mailto:aditya1raj003@gmail.com',
+      instagram: 'https://www.instagram.com/aditya_raj645/',
+    },
+  },
+];
 
 const secondRowMembers = [
   {
@@ -171,10 +185,11 @@ export default function Team() {
     <div className="team-container">
       <h1 className="team-title">Meet Our Team</h1>
 
-      {/* Chief Advisor - centered single card */}
       <div className="team-row team-row-center">
-        <TeamCard member={aditya} />
-      </div>
+  {firstrow.map((member, idx) => (
+    <TeamCard key={idx} member={member} />
+  ))}
+</div>
 
       {/* Coordinators - centered */}
       <div className="team-row team-row-three">
